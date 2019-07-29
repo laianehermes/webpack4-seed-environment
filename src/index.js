@@ -1,6 +1,7 @@
 import './base.scss'
 import './assets/stylesheets/typography.scss'
-import MyImg from './assets/images/mountain.jpg'
+import MyImg from './assets/images/ok.svg'
+import 'bootstrap';
 class Generator {
   createParagraph(__string) {
     const textNode = document.createTextNode(__string);
@@ -26,7 +27,7 @@ class Generator {
 
 const gen = new Generator;
 const par = gen.createParagraph('Boo! ƪ(ړײ)ƪ');
-const myImg = gen.createImg(MyImg, 250, 400);
+const myImg = gen.createImg(MyImg, 250, 200);
 const div = gen.createDiv(par);
 
 div.appendChild(myImg);
